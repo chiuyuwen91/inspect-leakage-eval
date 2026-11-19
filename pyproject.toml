@@ -1,0 +1,13 @@
+[project]
+name = "inspect-leakage-eval"
+version = "0.1.0"
+description = "Mini Inspect AI eval: can a model spot data leakage in an ML evaluation setup? Synthetic cases."
+requires-python = ">=3.10"
+dependencies = ["inspect-ai", "scikit-learn", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
